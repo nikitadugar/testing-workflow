@@ -1,0 +1,12 @@
+name: static-checks
+description: testing
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout
+      uses: hashicorp/setup-terraform@v1
+      with:
+        terraform_wrapper: false        
+   
+    # - name: check terraform format 
+    #   run: terraform fmt --recursive    
